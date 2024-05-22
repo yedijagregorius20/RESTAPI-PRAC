@@ -5,7 +5,7 @@
         "description": "Laravel project to practive developing Rest API with L5 Swagger OpenApi",
         "contact": {
             "name": "Yedija Gregorius",
-            "email": "email@sample.com"
+            "email": "yedija.422023007@civitas.ukrida.ac.id"
         },
         "version": "1.0.0",
         "x-logo": {
@@ -37,6 +37,26 @@
                 ],
                 "summary": "Store a newly created item",
                 "operationId": "store",
+                "requestBody": {
+                    "description": "Request body description",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Book"
+                            },
+                            "example": {
+                                "title": "Eating Clean",
+                                "author": "Inge Tumiwa-Bachrens",
+                                "publisher": "Kawan Pustaka",
+                                "publication_year": "2016",
+                                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1482170055i/33511107.jpg",
+                                "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu 'sehat' bagi tubuh kita.",
+                                "price": 85000
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "400": {
                         "description": "Invalid input",
@@ -121,6 +141,26 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "Request body description",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Book"
+                            },
+                            "example": {
+                                "title": "Eating Clean",
+                                "author": "Inge Tumiwa-Bachrens",
+                                "publisher": "Kawan Pustaka",
+                                "publication_year": "2016",
+                                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1482170055i/33511107.jpg",
+                                "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu 'sehat' bagi tubuh kita.",
+                                "price": 85000
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "404": {
                         "description": "Item not found",

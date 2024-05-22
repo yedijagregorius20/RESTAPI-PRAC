@@ -45,6 +45,14 @@ class BookController extends Controller {
      *          response=201,
      *          description="Successful",
      *          @OA\JsonContent()
+     *      ),
+     *      @OA\RequestBody(
+     *          required=true,
+     *          description="Request body description",
+     *          @OA\JsonContent(
+     *              ref="#/components/schemas/Book",
+     *              example={"title": "Eating Clean", "author": "Inge Tumiwa-Bachrens", "publisher": "Kawan Pustaka", "publication_year": "2016", "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1482170055i/33511107.jpg", "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu 'sehat' bagi tubuh kita.", "price": 85000}
+     *          )
      *      )
      * )
      */
@@ -142,6 +150,14 @@ class BookController extends Controller {
      *          @OA\Schema(
      *              type="integer",
      *              format="int64"
+     *          )
+     *      ),
+     *      @OA\RequestBody(
+     *          required=true,
+     *          description="Request body description",
+     *          @OA\JsonContent(
+     *              ref="#/components/schemas/Book",
+     *              example={"title": "Eating Clean", "author": "Inge Tumiwa-Bachrens", "publisher": "Kawan Pustaka", "publication_year": "2016", "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1482170055i/33511107.jpg", "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu 'sehat' bagi tubuh kita.", "price": 85000}
      *          )
      *      )
      * )

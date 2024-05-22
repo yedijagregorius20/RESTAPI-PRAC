@@ -15,7 +15,7 @@ use OpenApi\Annotations as OA;
  *      },
  *      @OA\Contact(
  *          name="Yedija Gregorius",
- *          email="email@sample.com"
+ *          email="yedija.422023007@civitas.ukrida.ac.id"
  *      ),
  * )
  */
