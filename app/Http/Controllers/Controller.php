@@ -6,12 +6,17 @@ use OpenApi\Annotations as OA;
 /**
  * @OA\Info(
  *      version="1.0.0",
+ *      title="My Rest API",
+ *      description="Laravel project to practive developing Rest API with L5 Swagger OpenApi",
  *      x={
  *          "logo": {
- *              "url": "https://via.placeholder.com/190x90.png?text=L5-Swagger"
+ *              "url": "https://miro.medium.com/v2/resize:fit:1200/1*J3G3akaMpUOLegw0p0qthA.png"
  *          }
  *      },
- *      title="My Rest API"
+ *      @OA\Contact(
+ *          name="Yedija Gregorius",
+ *          email="email@sample.com"
+ *      ),
  * )
  */
 
