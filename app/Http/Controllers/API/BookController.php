@@ -7,8 +7,23 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use App\Models\Book;
+use OpenApi\Annotations as OA;
 
 class BookController extends Controller {
+
+    /**
+     * @OA\Get(
+     *      path="/books",
+     *      tags={"book"},
+     *      description="Display a listing items",
+     *      operationId="index",
+     *      @OA\Response(
+     *          response=200,
+     *          description="successful operation"
+     *      )
+     * )
+     */
+
     public function index() {
         return Book::get();
     }
