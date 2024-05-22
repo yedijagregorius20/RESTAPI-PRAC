@@ -51,7 +51,7 @@ class BookController extends Controller {
 
     public function store(Request $request) {
         try {
-            $validator = Validator::make($request->all(), [
+            $validator = validator()->make($request->all(), [
                 'title' => 'required|unique:books',
                 'author' => 'required|max:100',
             ]);
@@ -156,7 +156,7 @@ class BookController extends Controller {
         }
 
         try {
-            $validator = Validator::make($request->all(), [
+            $validator = validator()->make($request->all(), [
                 'title' => 'required|unique:books',
                 'author' => 'required|max:100',
             ]);
