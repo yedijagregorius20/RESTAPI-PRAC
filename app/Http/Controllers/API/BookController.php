@@ -14,7 +14,7 @@ class BookController extends Controller {
 
     /**
      * @OA\Get(
-     *      path="/api/books",
+     *      path="/api/book",
      *      tags={"book"},
      *      description="Display a listing items",
      *      operationId="index",
@@ -32,7 +32,7 @@ class BookController extends Controller {
 
     /**
      * @OA\Post(
-     *      path="/api/books",
+     *      path="/api/book",
      *      tags={"book"},
      *      summary="Store a newly created item",
      *      operationId="store",
@@ -53,7 +53,8 @@ class BookController extends Controller {
      *              ref="#/components/schemas/Book",
      *              example={"title": "Eating Clean", "author": "Inge Tumiwa-Bachrens", "publisher": "Kawan Pustaka", "publication_year": "2016", "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1482170055i/33511107.jpg", "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu 'sehat' bagi tubuh kita.", "price": 85000}
      *          )
-     *      )
+     *      ),
+     *      security={{"passport_token_ready":{},"passport":{}}}
      * )
      */
 
@@ -159,7 +160,8 @@ class BookController extends Controller {
      *              ref="#/components/schemas/Book",
      *              example={"title": "Eating Clean", "author": "Inge Tumiwa-Bachrens", "publisher": "Kawan Pustaka", "publication_year": "2016", "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1482170055i/33511107.jpg", "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu 'sehat' bagi tubuh kita.", "price": 85000}
      *          )
-     *      )
+     *      ),
+     *      security={{"passport_token_ready":{},"passport":{}}}
      * )
      */
 
@@ -221,7 +223,8 @@ class BookController extends Controller {
      *              type="integer",
      *              format="int64"
      *          )
-     *      )
+     *      ),
+     *      security={{"passport_token_ready":{},"passport":{}}}
      * )
      */
 
