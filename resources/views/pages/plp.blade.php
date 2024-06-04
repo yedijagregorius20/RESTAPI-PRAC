@@ -101,7 +101,7 @@
                                             <option value="latest_publication">Sort by latest</option>
                                             <option value="title_added">Sort by time added</option>
                                             <option value="price_asc">Sort by price: low to high</option>
-                                            <option value="price_asc">Sort by price: high to low</option>
+                                            <option value="price_desc">Sort by price: high to low</option>
                                         </select>
                                     </div>
                                 </div>
